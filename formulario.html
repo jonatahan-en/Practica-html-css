@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica html y css</title>
+</head>
+<body>
+    <!--
+        COMENTARIOS
+    -->
+    <section>
+        <h2>FORMULARIO</h2>
+        <form method="post">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="off" required>
+            </div>
+            <div >
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido"
+                autocomplete="off" required>
+            </div>
+            <div >
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Ingrese su numero" autocomplete="off" title="Format(123 456 678)" required>
+            </div>
+            <div>
+                <label for="mail">Github</label>
+                <input type="email" name="email" id="mail" > <!--falta validacion-->
+            </div>
+            <fieldset>
+                <legend>¿Como me conociste?</legend>
+                <div>                
+                    <label for="univercity">Universidad</label>
+                    <input type="radio" id=" univercity" name="genre" value="universidaad">
+                </div>
+                <div>
+                    <label for="keepcoding" >keepcoding Kick-off</label>
+                    <input  type="radio" id="keepcoding" name="genre" value="keepcoding">
+                </div>
+                <div>
+                    <label for="school" >Colegio</label>
+                    <input  type="radio" id="school" name="genre" value="colegio">
+                </div>
+                    <label for="github" >En Github</label>
+                    <input type="radio" id="github" name="genre" value="github">
+                </div>
+            </fieldset>
+            <div>
+                <label for="bio">Cuentanos mas de ti</label>
+                <textarea name="userbio" id="bio" rows="10" maxlength="180"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">¿Quieres recibir mas información?</label>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Guardar</button>
+            </div>   
+        </form>
+    </section>
+</body>
+</html>
