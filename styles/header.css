@@ -1,9 +1,11 @@
-.header {
-    margin: 0;
-    width:100%;
-}
 .img2 {
-    width: 100px;
-    margin: 0 auto;
-    border-radius: 5px;
+    width: 70px;
+    border-radius: 30px;
+    margin: 0 1em;
+}
+p {
+    margin: 0 1em;
+}
+h1{
+    margin:0 0.5em;
 }

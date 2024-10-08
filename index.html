@@ -4,27 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <style>
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     </style>
 </head>
-<body >
-    <header >
+<body  class="main-bd">
+        <section>
         <div>
-            <h1>Nicolas Cage</h1>
             <img src="./assets/app/logo-head-2.jpg" class="img2" alt="">
         </div>
-        <div>
-            <p>Nací el 7 de enero de 1964 en Long Beach, California, como Nicolas Kim Coppola, pero cambié mi apellido a Cage para forjar mi propio camino, lejos de la sombra de mi tío, Francis Ford Coppola. En los años 80 empecé a ganar reconocimiento, pero fue con Leaving Las Vegas (1995) cuando logré mi primer Oscar al Mejor Actor. Me he movido entre géneros, desde la acción con The Rock y Face/Off, hasta dramas más profundos. Mi estilo de actuación es único, a veces extremo, pero siempre auténtico. Aunque tuve problemas financieros, mi pasión nunca disminuyó y sigo reinventándome.</p>
-        </div>
-    
-        <div>
-            <img src="./assets/app/fondo-imagen.jpg"  class="header" >
-        </div>
-    </header >
+            <div>
+                <h1>Nicolas Cage</h1>
+                <p>Nací el 7 de enero de 1964 en Long Beach, California, y cambié mi apellido a Cage para forjar mi propio camino fuera de la sombra de mi tío, Francis Ford Coppola. Gané reconocimiento en los 80, y obtuve un Oscar por Leaving Las Vegas (La RocayCara/Apagado ).</p>
+            </div>
+        </section>
+        <section>
+            <h3>MY SKILLS</h3>
+            <hr>
+            <div class="wrapper">
+                <div class="progress-bar">
+                    <div class="progress" id="progress1" style="width:0 ;">ACCION</div>  
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress1" style="width:0 ;">COMEDIA</div>  
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress1" style="width:0 ;">DRAMA</div>  
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress1" style="width:0 ;">FANTASIA</div>  
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress1" style="width:0 ;">TERROR</div>  
+                </div>
+            </div>
+        </section>
+        <section class="banner" >
+            <div class="image"></div>
+            <div class=" content">
+                <p >"No soy un demonio. Soy un lagarto, un tiburón, una pantera que busca el calor. Quiero ser Bob Denver drogado y tocando el acordeón".
+                </p>
+            </div>
+        </section>
+        <hr>
+        <!--FORMULARIO-->
+        <section>
+            <h2>FORMULARIO</h2>
+            <form method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="off" required>
+                </div>
+                <div >
+                    <label for="surname">Apellido</label>
+                    <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido"
+                    autocomplete="off" required>
+                </div>
+                <div >
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Ingrese su numero" autocomplete="off" title="Format(123 456 678)" required>
+                </div>
+                <div>
+                    <label for="mail">Github</label>
+                    <input type="email" name="email" id="mail" > <!--falta validacion-->
+                </div>
+                <fieldset>
+                    <legend>¿Como me conociste?</legend>
+                    <div>                
+                        <label for="univercity">Universidad</label>
+                        <input type="radio" id=" univercity" name="genre" value="universidaad">
+                    </div>
+                    <div>
+                        <label for="keepcoding" >keepcoding Kick-off</label>
+                        <input  type="radio" id="keepcoding" name="genre" value="keepcoding">
+                    </div>
+                    <div>
+                        <label for="school" >Colegio</label>
+                        <input  type="radio" id="school" name="genre" value="colegio">
+                    </div>
+                        <label for="github" >En Github</label>
+                        <input type="radio" id="github" name="genre" value="github">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="bio">Cuentanos mas de ti</label>
+                    <textarea name="userbio" id="bio" rows="10" maxlength="180"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">¿Quieres recibir mas información?</label>
+                </div>
+                <div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Guardar</button>
+                </div>   
+            </form>
+        </section>
+        <!--FOOTER-->
     <footer class="footer" >
         <h2>!Sigueme</h2>
         <nav>
@@ -35,8 +116,6 @@
                 
                     <a href="https://www.instagram.com/nicolascage_official/?hl=en" target="_blank" rel="noopener noreferrer"> <img src="./assets/logo-contact/instagram.jpg" class="img" alt="> logo-Instagram" >
                     </a>
-
-                
                     <a href="https://x.com/CoppolaKim41107" target="_blank" rel="noopener noreferrer"><img src="./assets/logo-contact/twiter.jpg" class="img" alt="logo-x"></a>
                         
                     

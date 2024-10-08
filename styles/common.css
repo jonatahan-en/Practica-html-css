@@ -1,7 +1,21 @@
-bod {
+:root {
+    --bg-color:#0e0c0c;
+    --main-brand-color:#e50910;
+    --main-brand-color-light:#e44c54;
+    --secondary-brand-color:#0e1b4f;
+    --main-text-color: #d7d5d5;
+    --border-color:#4b5563;
+    --main-font-family:Arial, Helvetica,sans-serif;
+}
+.main-bd {
+    
+    color: var(--main-text-color);
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
-    background-color: white;
+    background-color:var(--main-text-color);
+    background: var(--bg-color);
+    opacity: 1;
 }
