@@ -1,0 +1,30 @@
+.video {
+    width: 95%;
+    list-style: none;
+}
+.nav {
+    .list{
+        list-style: none;
+        padding: 0;
+        margin:5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+.info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 768px;
+
+}
+
+.parafo-proyect {
+    margin: 0.5rem 8%;
+}
+h3 {
+    margin-inline-end: 1.5em;
+    list-style: none;
+}

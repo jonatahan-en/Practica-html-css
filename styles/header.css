@@ -24,10 +24,17 @@
         }
     }
 }
-
-
-
-
+.parafo {
+    margin: 0.5rem 6%;
+}
 .hidden{
     display: none;
 }
+
+
+@media screen and (width > 700px){
+    .hidden {
+        display: block;
+    }
+}
+
