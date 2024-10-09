@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nicolas Cage Portafolio</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/conteiner.css ">
+    <link rel="stylesheet" href="styles/progress-bar.css">
 
     </style>
 </head>
-<body  class="main-bd">
+<body  class="main-bd container">
+        <!--ENCABEZADO-->
+    <header class="header">
+            <img class="img2" src="./assets/app/logo-head-2.jpg" 
+                alt="Nicolas Cage film">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a class="btn" href="#skills">Mis Skills</a>  
+                    </li>
+                    <li class="item">
+                        <a class="btn" href="#follow-me">¡sigueme!</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="http://127.0.0.1:5500/proyect.html" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        alt="Proyectos Nicolas Cage">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#suscribete">suscribete</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
         <section>
-        <div>
-            <img src="./assets/app/logo-head-2.jpg" class="img2" alt="">
-        </div>
             <div>
                 <h1>Nicolas Cage</h1>
-                <p>Nací el 7 de enero de 1964 en Long Beach, California, y cambié mi apellido a Cage para forjar mi propio camino fuera de la sombra de mi tío, Francis Ford Coppola. Gané reconocimiento en los 80, y obtuve un Oscar por Leaving Las Vegas (La RocayCara/Apagado ).</p>
+                <p>Nací el 7 de enero de 1964 en Long Beach, California, y cambié mi apellido a Cage para forjar mi propio camino fuera de la sombra de mi tío, Francis Ford Coppola. Gané reconocimiento en los 80, y obtuve un Oscar por Leaving Las Vegas (La RocayCara/Apagado  </p>
             </div>
-        </section>
-        <section>
-            <h3>MY SKILLS</h3>
+            <!--BARRAS DE PROGRESION-->
+            <h3 id="skills">MY SKILLS</h3>
             <hr>
             <div class="wrapper">
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" style="width:0 ;">ACCION</div>  
+                    <div class="progress" id="progress1" progress-bar="width:0 ;">ACCION</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" style="width:0 ;">COMEDIA</div>  
+                    <div class="progress" id="progress1" progress-bar="width:0 ;">COMEDIA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" style="width:0 ;">DRAMA</div>  
+                    <div class="progress" id="progress1" progress-bar="width:0 ;">DRAMA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" style="width:0 ;">FANTASIA</div>  
+                    <div class="progress" id="progress1" progress-bar="width:0 ;">FANTASIA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" style="width:0 ;">TERROR</div>  
+                    <div class="progress" id="progress1"progress-bar="width:0";>TERROR</div>  
                 </div>
             </div>
         </section>
+    <main>
         <section class="banner" >
             <div class="image"></div>
             <div class=" content">
@@ -52,28 +75,28 @@
             </div>
         </section>
         <hr>
-        <!--FORMULARIO-->
-        <section>
-            <h2>FORMULARIO</h2>
+            <!--FORMULARIO-->
+        <section id="suscribete" class="cart">
+            <h2 >FORMULARIO</h2>
             <form method="post">
-                <div>
+                <div class="for_input">
                     <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="off" required>
                 </div>
-                <div >
+                <div class="for_input">
                     <label for="surname">Apellido</label>
                     <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido"
                     autocomplete="off" required>
                 </div>
-                <div >
+                <div class="for_input" >
                     <label for="phone">Telefono</label>
                     <input type="tel" name="phone" id="phone" placeholder="Ingrese su numero" autocomplete="off" title="Format(123 456 678)" required>
                 </div>
-                <div>
+                <div class="for_input">
                     <label for="mail">Github</label>
                     <input type="email" name="email" id="mail" > <!--falta validacion-->
                 </div>
-                <fieldset>
+                <fieldset class="for_input">
                     <legend>¿Como me conociste?</legend>
                     <div>                
                         <label for="univercity">Universidad</label>
@@ -91,32 +114,33 @@
                         <input type="radio" id="github" name="genre" value="github">
                     </div>
                 </fieldset>
-                <div>
+                <div class="for_input">
                     <label for="bio">Cuentanos mas de ti</label>
                     <textarea name="userbio" id="bio" rows="10" maxlength="180"></textarea>
                 </div>
-                <div>
+                <div class="for_input">
                     <input type="checkbox" name="newsletter" id="newsletter">
                     <label for="newsletter">¿Quieres recibir mas información?</label>
                 </div>
-                <div>
+                <div class="for_input">
                     <button type="reset">Reset</button>
                     <button type="submit">Guardar</button>
                 </div>   
             </form>
         </section>
+    </main>
         <!--FOOTER-->
-    <footer class="footer" >
-        <h2>!Sigueme</h2>
-        <nav>
+    <footer class="footer">
+        <h2 id="follow-me">!Sigueme</h2>
+        <nav >
             <ul>
                 <li>
-                    <a href="https://github.com/jonatahan-en" target="_blank" rel="noopener noreferrer"><img src="./assets/logo-contact/github.jpg" class="img" alt="logo-Github"></a>
+                    <a href="https://github.com/jonatahan-en" target="_blank" rel="noopener noreferrer"><img src="./assets/logo-contact/github.jpg" class="img" alt="Visita mi Github"></a>
                         
                 
-                    <a href="https://www.instagram.com/nicolascage_official/?hl=en" target="_blank" rel="noopener noreferrer"> <img src="./assets/logo-contact/instagram.jpg" class="img" alt="> logo-Instagram" >
+                    <a href="https://www.instagram.com/nicolascage_official/?hl=en" target="_blank" rel="noopener noreferrer"> <img src="./assets/logo-contact/instagram.jpg" class="img" alt=">sigueme en Instagram" >
                     </a>
-                    <a href="https://x.com/CoppolaKim41107" target="_blank" rel="noopener noreferrer"><img src="./assets/logo-contact/twiter.jpg" class="img" alt="logo-x"></a>
+                    <a href="https://x.com/CoppolaKim41107" target="_blank" rel="noopener noreferrer"><img src="./assets/logo-contact/twiter.jpg" class="img" alt="sigueme en x"></a>
                         
                     
                 </li>
