@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="styles/conteiner.css ">
     <link rel="stylesheet" href="styles/progress-bar.css">
+    <link rel="stylesheet" href="styles/formulario.css ">
 
     </style>
 </head>
@@ -29,13 +29,13 @@
                         <a class="btn hidden"  href="#follow-me">¡sigueme!</a>
                     </li>
                     <li class="item">
-                        <a class="btn hidden"  href="http://127.0.0.1:5500/proyect.html" 
+                        <a class="btn hidden"  href="http://127.0.0.1:5500/video.html" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        alt="Proyectos Nicolas Cage">Proyectos</a>
+                        alt="Proyectos Nicolas Cage">Video</a>
                     </li>
                     <li class="item">
-                        <a class="btn "  href="#suscribete">suscribete</a>
+                        <a class="btn "  href="#suscribete">contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -75,55 +75,100 @@
         </section>
         <hr>
             <!--FORMULARIO-->
-        <section id="suscribete" class="cart">
-            <h2 >FORMULARIO</h2>
-            <form method="post">
-                <div class="for_input">
+        <section id="suscribete" class="card">
+            <h2 >Contacto</h2>
+            <form method="post"  novalidate>
+                <div class="form_element">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="off" required>
+                    <input 
+                    class="input" 
+                    type="text"
+                    name="name" 
+                    id="name" 
+                    placeholder="Ingrese su nombre" 
+                    autocomplete="off"
+                    required>
                 </div>
-                <div class="for_input">
+                <div class="form_element">
                     <label for="surname">Apellido</label>
-                    <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido"
-                    autocomplete="off" required>
+                    <input 
+                    class="input" 
+                    type="text" 
+                    name="surname" 
+                    id="surname" 
+                    placeholder="Ingrese su apellido"
+                    autocomplete="off" 
+                    required>
                 </div>
-                <div class="for_input" >
+                <div class=form_element >
                     <label for="phone">Telefono</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingrese su numero" autocomplete="off" title="Format(123 456 678)" required>
+                    <input 
+                    class="input" 
+                    type="tel" 
+                    name="phone" 
+                    id="phone"
+                    placeholder="Ingrese su numero" 
+                    autocomplete="off" 
+                    title="Format(123 456 678)" 
+                    required>
                 </div>
-                <div class="for_input">
-                    <label for="mail">Github</label>
-                    <input type="email" name="email" id="mail" > <!--falta validacion-->
+                <div class=form_element>
+                    <label for="github">Github</label>
+                    <input 
+                    class="input" 
+                    type="email" 
+                    name="github" 
+                    id="github"
+                    pattern="{@}[\s]+ "
+                    title="Format(@surname)"
+                    value="@surname" 
+                    placeholder="ingrese su usuario de github"
+                    required > 
                 </div>
-                <fieldset class="for_input">
+                <fieldset class="form_element ">
                     <legend>¿Como me conociste?</legend>
-                    <div>                
+                    <div class="checkbox">                
+                        <input 
+                        type="radio" 
+                        id=" univercity" 
+                        name="genre" 
+                        value="universidaad">
                         <label for="univercity">Universidad</label>
-                        <input type="radio" id=" univercity" name="genre" value="universidaad">
                     </div>
-                    <div>
+                    <div class="checkbox">
+                        <input  
+                        type="radio" 
+                        id="keepcoding" 
+                        name="genre" 
+                        value="keepcoding">
                         <label for="keepcoding" >keepcoding Kick-off</label>
-                        <input  type="radio" id="keepcoding" name="genre" value="keepcoding">
                     </div>
-                    <div>
+                    <div  class="checkbox">
+                        <input  
+                        type="radio" 
+                        id="school" 
+                        name="genre" 
+                        value="colegio">
                         <label for="school" >Colegio</label>
-                        <input  type="radio" id="school" name="genre" value="colegio">
                     </div>
-                        <label for="github" >En Github</label>
+                    <div  class="checkbox">
                         <input type="radio" id="github" name="genre" value="github">
+                        <label for="github" >En Github</label>
                     </div>
                 </fieldset>
-                <div class="for_input">
+                <div class="form_element ">
+                    <textarea class="input"  name="userbio" id="bio" rows="10" maxlength="180"></textarea>
                     <label for="bio">Cuentanos mas de ti</label>
-                    <textarea name="userbio" id="bio" rows="10" maxlength="180"></textarea>
                 </div>
-                <div class="for_input">
-                    <input type="checkbox" name="newsletter" id="newsletter">
-                    <label for="newsletter">¿Quieres recibir mas información?</label>
+                <div class="form_element">
+                    <div class="checkbox">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">¿Quieres mas informacion?</label>
+                    </div>
                 </div>
-                <div class="for_input">
-                    <button type="reset">Reset</button>
-                    <button type="submit">Guardar</button>
+                <div >
+                    <button class="btn  secondary" type="reset">Reset</button>
+                    <button class="btn " type="submit">Guardar</button>      
                 </div>   
             </form>
         </section>
