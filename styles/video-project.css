@@ -1,31 +1,45 @@
 .video {
-    width: 95%;
+    width: 90%;
+    margin: 0 6%;
     list-style: none;
 }
 .nav {
     .list{
-        list-style: none;
-        padding: 0;
-        margin:5px;
+        padding: 0 1rem;
+        margin:0.5rem 3%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 0.5rem;
     }
 }
+
 .info {
     width: 90%;
     margin: 0 auto;
     padding: 3rem;
     max-width: 768px;
-
+    
 }
 
+h3 {
+    max-width: 900px;
+    margin: 0.5rem auto;
+    padding: 2rem 2rem;
+}
 
 .rectify-btn {
-    margin: 0.2rem 8%;
+    max-width: 400px;
+    margin:0 auto;
+    padding: 0.5rem 1.5rem;
 }
-h3 {
-    margin-inline-end: 1.5em;
-    list-style: none;
-}
+
+@media screen and (width > 700){
+    .video{
+        .nav{
+            .list{
+                padding: 0 5rem;    
+        }   }
+    }
+}    
+

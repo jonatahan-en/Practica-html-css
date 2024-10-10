@@ -25,7 +25,9 @@
     }
 }
 .parafo {
-    margin: 0.5rem 6%;
+    max-width: 800px;
+    margin: 0.5rem auto;
+    padding: 0 0.5rem;
 }
 .hidden{
     display: none;
@@ -35,6 +37,13 @@
 @media screen and (width > 700px){
     .hidden {
         display: block;
+    }
+    .header {
+        .nav {
+            span{
+                display:none;
+            }
+        }
     }
 }
 

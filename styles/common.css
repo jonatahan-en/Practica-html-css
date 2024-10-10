@@ -13,3 +13,7 @@
     background-color:var(--bg-color);
     opacity: 1;
 }
+ul {
+    list-style: none;
+    padding: 0;
+}
