@@ -53,19 +53,19 @@
             <h3 class="parafo" id="skills">MY SKILLS</h3>
             <div class="wrapper">
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" progress-bar="width:0 ;">ACCION</div>  
+                    <div class="progress" id="progress-40" progress-bar="width: 40;">ACCION</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" progress-bar="width:0 ;">COMEDIA</div>  
+                    <div class="progress" id="progress-15" progress-bar="width: 15;">COMEDIA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" progress-bar="width:0 ;">DRAMA</div>  
+                    <div class="progress" id="progress-25" progress-bar="width: 25;">DRAMA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1" progress-bar="width:0 ;">FANTASIA</div>  
+                    <div class="progress" id="progress1-10" progress-bar="width: 10;">FANTASIA</div>  
                 </div>
                 <div class="progress-bar">
-                    <div class="progress" id="progress1"progress-bar="width:0";>TERROR</div>  
+                    <div class="progress" id="progress2-10"progress-bar="width: 10;">TERROR</div>  
                 </div>
             </div>
         </section>
@@ -81,7 +81,7 @@
             <!--FORMULARIO-->
         <section id="suscribete" class="card">
             <h2 >Contacto</h2>
-            <form method="post"  novalidate>
+            <form method="post">
                 <div class="form_element">
                     <label for="name">Nombre</label>
                     <input 
@@ -89,9 +89,10 @@
                     type="text"
                     name="name" 
                     id="name" 
+                    required
                     placeholder="Ingrese su nombre" 
                     autocomplete="off"
-                    required>
+                    >
                 </div>
                 <div class="form_element">
                     <label for="surname">Apellido</label>
@@ -100,9 +101,10 @@
                     type="text" 
                     name="surname" 
                     id="surname" 
+                    required
                     placeholder="Ingrese su apellido"
                     autocomplete="off" 
-                    required>
+                    >
                 </div>
                 <div class=form_element >
                     <label for="phone">Telefono</label>
@@ -111,36 +113,39 @@
                     type="tel" 
                     name="phone" 
                     id="phone"
+                    required
                     placeholder="Ingrese su numero" 
-                    autocomplete="off" 
-                    title="Format(123 456 678)" 
-                    required>
+                    autocomplete="off"
+                    >
                 </div>
                 <div class=form_element>
                     <label for="github">Github</label>
                     <input 
                     class="input" 
-                    type="email" 
+                    type="text" 
                     name="github" 
                     id="github"
-                    pattern="{@}[\s]+ "
-                    title="Format(@surname)"
+                    required 
+                    pattern="^@[^\s]+"
+                    title="Ingrese un nombre valido. Ej: @username"
                     value="@surname" 
                     placeholder="ingrese su usuario de github"
-                    required > 
+                    > 
                 </div>
                 <fieldset class="form_element ">
                     <legend>¿Como me conociste?</legend>
                     <div class="checkbox">                
-                        <input 
+                        <input
+                        required 
                         type="radio" 
                         id=" univercity" 
                         name="genre" 
-                        value="universidaad">
+                        value="universidad">
                         <label for="univercity">Universidad</label>
                     </div>
                     <div class="checkbox">
-                        <input  
+                        <input
+                        required  
                         type="radio" 
                         id="keepcoding" 
                         name="genre" 
@@ -149,6 +154,7 @@
                     </div>
                     <div  class="checkbox">
                         <input  
+                        required
                         type="radio" 
                         id="school" 
                         name="genre" 
@@ -156,12 +162,12 @@
                         <label for="school" >Colegio</label>
                     </div>
                     <div  class="checkbox">
-                        <input type="radio" id="github" name="genre" value="github">
+                        <input required type="radio" id="github" name="genre" value="github">
                         <label for="github" >En Github</label>
                     </div>
                 </fieldset>
                 <div class="form_element ">
-                    <textarea class="input"  name="userbio" id="bio" rows="10" maxlength="180"></textarea>
+                    <textarea class="input" required name="userbio" id="bio" rows="10" maxlength="180"></textarea>
                     <label for="bio">Cuentanos mas de ti</label>
                 </div>
                 <div class="form_element">

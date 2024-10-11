@@ -29,15 +29,57 @@
     justify-content:flex-start;
     align-items: center;
     font-weight: bold;
-    animation:animate 5s linear forwards;
-}
 
+    animation:progress 5s linear forwards;
+}
+/*
 @keyframes animate{
-        0% {width: 0;
-        } 
+    0% {width: 0;} 
         100%{width: 80%;}
+    }*/
+    
+    #progress-40 {
+        animation: progress40 5s linear forwards;
+    }
+    @keyframes progress40 {
+        0% { width: 0; }
+        100% { width: 70%; }
+        }
+
+
+    #progress-15 {
+        animation: progress15 5s linear forwards;
+    }
         
-}
-
-
-
+    @keyframes progress15 {
+        0% { width: 0; }
+        100% { width: 45%; }
+    }
+    
+    #progress-25 {
+        animation: progress25 5s linear forwards;
+    }
+        
+    @keyframes progress25 {
+        0% { width: 0; }
+        100% { width: 55%; }
+    }
+    
+    #progress1-10 {
+        animation: progress10 5s linear forwards;
+    }
+        
+    @keyframes progress10 {
+        0% { width: 0; }
+        100% { width: 40%; }
+    }
+    
+    #progress2-10 {
+        animation: progress10 5s linear forwards;
+    }
+        
+    @keyframes progress10 {
+        0% { width: 0; }
+        100% { width: 40%; }
+    }
+    
