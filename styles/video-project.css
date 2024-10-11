@@ -3,8 +3,8 @@
     margin: 0 6%;
     list-style: none;
 }
-.nav {
-    .list{
+.nav-video {
+    .list-video{
         padding: 0 1rem;
         margin:0.5rem 3%;
         display: flex;
