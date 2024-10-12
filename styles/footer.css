@@ -6,7 +6,7 @@
     background: rgb(49, 49, 59);
     padding: 0.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
@@ -17,7 +17,7 @@
 }
 .img {
     width: 20px;
-    margin: 5px 30px;
+    margin: 5px 10px;
     border-radius: 8px;
     
 }

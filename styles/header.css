@@ -17,6 +17,26 @@
         margin: 0 1em;
     }
     .nav {
+        .burger-wrapper {
+            position: relative;
+            .burger {
+                height: 25px;
+                width: 50px;
+            }
+            input {
+                position: absolute;
+                inset: 20%;
+                opacity: 0;
+            }
+        }
+        .burger-wrapper:checked 
+        + .nav {
+            display: block;
+        }
+        #navegacion {
+            display: none;
+
+        }
         .list{
             list-style: none;
             padding: 0;
@@ -25,7 +45,8 @@
             gap: 5px;
         }
     }
-}
+    }
+
 .parafo {
     max-width: 800px;
     margin: 0.5rem auto;
@@ -34,12 +55,17 @@
 .hidden{
     display: none;
 }
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav {
-        padding: 10px 0px;
+@media (width > 700px){
+    .header{
+        .nav {
+            padding: 10px 0px;
+            .burger-wrapper {
+                display: none;
+            }
+            #navegacion{
+                display: flex;
+            }
+        }
     }
 }
 @media (width > 1400px){
