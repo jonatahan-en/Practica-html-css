@@ -16,9 +16,10 @@
         
     }
     .content {
+        /*
         position: absolute;
         bottom: 0;
-        z-index: 1;
+        z-index: 1;*/
         text-align: center;
         font-family:fantasy;
         max-width: 600px;
@@ -26,10 +27,13 @@
 
     }
 }
-@media screen and (width > 680px){
+@media screen and (width > 850px){
     .banner{
         .image {
         background-image: url("../assets/app/fondo-imagen.jpg");
+        }
+        .image {
+            max-width: 100%;
         }
     }
 }

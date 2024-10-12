@@ -42,18 +42,9 @@
         padding: 10px 0px;
     }
 }
-/*
-@media screen and (width > 700px){
-    .hidden {
-        display: block;
-    }
+@media (width > 1400px){
     .header {
-        .nav {
-            span{
-                display:none;
-            }
-        }
+        max-width: none;
     }
 }
-*/
 
