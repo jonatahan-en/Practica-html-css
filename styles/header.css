@@ -45,6 +45,7 @@
 @media (width > 1400px){
     .header {
         max-width: none;
+        padding: 6rem;
     }
 }
 
