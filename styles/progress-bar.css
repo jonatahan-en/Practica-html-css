@@ -1,6 +1,6 @@
 .wrapper{
     width:95%;
-    height: 325px;
+
     margin: 0 auto;
     max-width: 375px;
     padding: 0.5rem;
@@ -31,8 +31,11 @@
 
 @media (width > 850px){
     .wrapper{
-        flex-wrap: wrap;
-        max-width: 650px;
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        place-content: center;
     }
 }
     
