@@ -5,7 +5,7 @@
     --secondary-brand-color:#0e1b4f;
     --main-text-color: #d7d5d5;
     --border-color:#4b5563;
-    --main-font-family:Arial, Helvetica,sans-serif;
+    font-family:Arial, Helvetica,sans-serif;
 }
 .main-bd {
     
