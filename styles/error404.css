@@ -1,0 +1,22 @@
+.image {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.color {
+    background: var(--main-text-color) ;
+}
+
+.boton {
+    background-color:var( --main-brand-color-light);
+}
+.boton2{
+    background-color:hwb(47 0% 0%);
+}
+
+.logo-rec{
+    margin: 1rem auto;
+}
+h1{
+    margin: 1rem;
+}
