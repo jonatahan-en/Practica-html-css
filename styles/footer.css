@@ -22,11 +22,13 @@
     
 }
 
-@media (width > 1000px){
+@media (width > 950px){
     .footer{
         flex-direction: row;
+        justify-content: space-evenly;
         max-width: none;
         font-size: 35px;
     }
 }
+
 
