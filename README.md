@@ -1,49 +1,51 @@
-"# Practica-html-css" 
-ayudame a crear un readme-md 
-1. El proyecto es para una practica de bootcamps de desarrollo web, el modulo es de html y css.
-2  El proyecto es crear un portafolio en mi caso , el nombre del portafolio es Nicolas Cage Portafolio.
-3. El proyecto es una practica del modulo de html y css del bootcamps de desarrollo web 
- 3.1 proposito: practicar diferentes aspectos y funciones de los diferentes herramientas  de las dos lenguajes 
- 3.2 funcionalidad: el  portafolio esta creado con 3 archivos html mas sus diferentes estilos con css
- Archivo 1 : index html.(https://jonatahan-en.github.io/Practica-html-css/index.html)
-        Es la pagina principal que  tiene botones que intercatua con los demas archivos y diferentes secciones como barras de progecion , una imagen de fondo con sus respectivos parafo de introduccion, un formulario con diferentes secciones para rellenar, y un footer en el cual estan diferentes redes sociales
-        FUNCIONAMIENTO: 
+# Nicolas Cage Portfolio - HTML & CSS Practice
 
-        Es la pagina principal que cuenta con un header el cual alberga un logo y un boton hamburger (menu) que despliega cuatro botones que nos dirigen a diferentes estancias del portafolio como son :
-        a.Skills._nos dirige a barras de progrecion
-        b.Sigueme._ nos dirige a nuestra redes sociales
-        c.Presentacion._ nos dirige a otro archivo "video.html"
-        d.contacto._ nos dirige a un formulario 
+Este proyecto es parte de una práctica del bootcamp de desarrollo web, enfocada en HTML y CSS. Se trata de la creación de un portafolio interactivo para el icónico actor **Nicolas Cage**. Aquí podrás explorar sus logros, filmografía y mucho más a través de una página web estática construida desde cero.
 
-        barras animadas:
-         son seis baras animadas que muestran el porcentage de peliculas realizadas en  cada genero por el actor , tiene que animarce cada ves que refrescas la pagina ,y cuando agrandamos la pagina se ace dos dolumnas de tres barras
+## Propósito
+El objetivo de este proyecto es consolidar conocimientos de HTML y CSS, poniendo en práctica diferentes técnicas y herramientas clave en el desarrollo web, tales como el uso de animaciones, validación de formularios, diseño responsive y más.
 
-         imagen:
-         En la parte de la imagen se compone de una imagen que cuando amplias la pantalla  cambia a otra image  ba con su respentivo parafo
+## Estructura del proyecto
 
-        Formulario :
-        Con diferentes secciones a rellenar todas ellas obligatorias "required" adicional mente a la seccion de ingrese su  Github le añadimos una validacion con el pattern="^@[^\s]+" y  en el mensaje de "cuentanos mas de ti " le damos un texarea de 180 caracteres
-        tambien cuenta con dos botones uno de reset"borra todo lo escrito " y un boton de guardar"guarda la informacio "
+El proyecto consta de **tres archivos HTML**, cada uno con su propio estilo en CSS, para crear una experiencia visual dinámica:
 
-        Footer:
-        En esta seccion tenemos enlases a diferentes redes sociales funcionales
+### 1. [Index.html](https://jonatahan-en.github.io/Practica-html-css/index.html) - Página principal
 
-
- Archivo2 . video html (https://jonatahan-en.github.io/Practica-html-css/video.html)
-  
-    Es una pequeña introducion con un video con fadel , esta con pussu footer con sus link a sus redes sociales , un video con animacion fadeln y un footer con link a diferentes redes socia les 
-    footer: esta compuesta de el titulo (presentacion Nicolas Gage)y dos botones
-    Back home: te redirige a la pagina principal
-    proyectos: te dirige al archivo project.html
-
-    banner: esta compuesto con un video  y una pequeña introduccion
-
-    footer: encontramos link funcional que nos dirigen a distintas redes sociales
-
-Archivo3 . Project.html (https://jonatahan-en.github.io/Practica-html-css/project.html)
-    En una pagina   que contiene una lista de las mejores peliculas   y esta compuesta de tres pate un encabezado , la parte principal lista de peliculas , footer que contiene diferentes redes sociales funcionales
-   
-
-
+- **Header:** Contiene un logo y un menú tipo hamburguesa que despliega cuatro secciones:
+    - **Skills:** Redirige a barras animadas de progreso que muestran el porcentaje de películas realizadas por género.
+    - **Sígueme:** Enlaces a redes sociales.
+    - **Presentación:** Redirige al archivo "video.html".
+    - **Contacto:** Enlace a un formulario interactivo.
     
+- **Barras de progreso:** Animadas, muestran el porcentaje de películas por género. Cambian su distribución a dos columnas en pantallas más anchas.
+- **Imagen:** Una imagen de fondo que cambia en función del tamaño de la pantalla, acompañada de un párrafo introductorio.
+- **Formulario:** Secciones obligatorias y validación personalizada, como la del campo de GitHub con el patrón `pattern="^@[^\s]+"`. Incluye botones de "reset" y "guardar".
+- **Footer:** Contiene enlaces funcionales a redes sociales externas.
 
+### 2. [Video.html](https://jonatahan-en.github.io/Practica-html-css/video.html) - Página de Presentación
+
+- **Header:** Con un logo y dos botones:
+    - **Back home:** Redirige a la página principal.
+    - **Proyectos:** Lleva a la página de proyectos.
+
+- **Video:** Presenta una animación *fade-in* y un resumen de una de las mejor película de Nicolas Cage.
+- **Footer:** Enlaces funcionales a redes sociales.
+
+### 3. [Project.html](https://jonatahan-en.github.io/Practica-html-css/project.html) - Página de Proyectos
+
+- **Header:** Con un logo y dos botones:
+    - **Back home:** Redirige a la página principal.
+    - **Presentación:** Te lleva a la página de video.
+
+- **Lista de películas:** Dividida en secciones de acción y drama, presentada con `display: grid`. El diseño se adapta al ancho de la pantalla, mostrando de 2 a 4 películas por línea.
+- **Footer:** Enlaces funcionales a redes sociales.
+
+## Funcionalidades adicionales:
+- Menú tipo hamburguesa.
+- Página de error 404.
+- Página de error 500.
+- Publicación en GitHub Pages.
+
+---
+
+Este portafolio no solo es una vitrina para el talento de Nicolas Cage, sino también una excelente oportunidad para aprender y poner a prueba habilidades de desarrollo web con HTML y CSS.
