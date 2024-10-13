@@ -26,7 +26,7 @@
     align-items: center;
     font-weight: bold;
 
-    animation:progress 5s linear forwards;
+    animation:progress 3s linear forwards;
 }
 
 @media (width > 850px){
